@@ -1,7 +1,7 @@
 {
   "name": "intercom-party",
-  "version": "0.0.0",
-  "description": "Small description for intercom-party goes here",
+  "version": "0.0.1",
+  "description": "This app is for inviting local customers to our 'intercom-party'",
   "private": true,
   "directories": {
     "doc": "doc",
@@ -28,6 +28,7 @@
     "ember-cli-htmlbars": "^1.0.1",
     "ember-cli-htmlbars-inline-precompile": "^0.3.1",
     "ember-cli-inject-live-reload": "^1.3.1",
+    "ember-cli-mirage": "0.1.11",
     "ember-cli-qunit": "^1.2.1",
     "ember-cli-release": "0.2.8",
     "ember-cli-sri": "^2.1.0",
