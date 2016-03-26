@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Intercom-party
 
 This README outlines the details of collaborating on this Ember application.
@@ -51,3 +52,6 @@ Specify what it takes to deploy your app.
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
 
+=======
+# intercom-party
+>>>>>>> 8385ff12619ecdfa20dd83fcef1e2e7103b07d22
