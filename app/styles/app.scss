@@ -6,13 +6,15 @@
 body{
     font-family: 'Ubuntu', sans-serif;
 }
-
-.ip-event-info{
+.ip-main-body{
   h2{
     color:white;
     font-family: 'Montserrat', sans-serif;
     @include linear-gradient(to top, orange, red);
   }
+}
+
+.ip-event-info{
   section{
     @include outer-container;
 
@@ -39,7 +41,7 @@ body{
     padding:1em;
     border:#f0f0f0 1px solid;
   }
-  
+
   .ip-customer-table-heading{
       font-weight:bold;
       background-color: whitesmoke;
