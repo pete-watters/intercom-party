@@ -1,0 +1,21 @@
+<div class="ip-event-info">
+  <h2 id="title">Welcome to the Interpalooza 2016 Ember App</h2>
+  <section>
+    <aside>What is it?</aside>
+    <article>Our annual partay</article>
+  </section>
+  <section>
+    <aside>Who can attend?</aside>
+    <article>Anyone within 100km of head office</article>
+  </section>
+</div>
+
+<button type="button" name="button" {{action 'loadCustomerData'}}>Click Me!</button>
+
+
+{{#each model as |customerInstance|}}
+  {{customer-information customer=customerInstance}}
+{{/each}}
+
+{{#link-to "about"}}About{{/link-to}}
+<!-- {{#link-to "customers"}}Customers{{/link-to}} -->
