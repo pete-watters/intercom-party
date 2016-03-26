@@ -1,0 +1,47 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+
+@import "bower_components/bourbon/app/assets/stylesheets/bourbon";
+@import "bower_components/neat/app/assets/stylesheets/neat";
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.ip-event-info{
+  h2{
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+    @include linear-gradient(to top, orange, red);
+  }
+  section{
+    @include outer-container;
+
+    aside {
+      font-weight:bold;
+      @include span-columns(4);
+    }
+
+    article {
+      @include span-columns(8);
+    }
+  }
+}
+
+.ip-customer-table{
+  display: table;
+  width:100%;
+  border-collapse:collapse;
+  tr{
+    display: table-row;
+  }
+  td, th{
+    display: table-cell;
+    padding:1em;
+    border:#f0f0f0 1px solid;
+  }
+  
+  .ip-customer-table-heading{
+      font-weight:bold;
+      background-color: whitesmoke;
+  }
+}

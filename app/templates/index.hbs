@@ -1,8 +1,8 @@
 <div class="ip-event-info">
-  <h2 id="title">Welcome to the Interpalooza 2016 Ember App</h2>
+  <h2 id="title">Welcome to the Intercom Party 2016 Ember App</h2>
   <section>
     <aside>What is it?</aside>
-    <article>Our annual partay</article>
+    <article>Our annual partay for our local customers</article>
   </section>
   <section>
     <aside>Who can attend?</aside>
@@ -10,12 +10,30 @@
   </section>
 </div>
 
-<button type="button" name="button" {{action 'loadCustomerData'}}>Click Me!</button>
 
+Click this button to attempt a JSON load and see the Mirage Load conflict in the console-
+<button type="button" name="button" {{action 'loadCustomerData'}}>Load JSON</button>
 
-{{#each model as |customerInstance|}}
-  {{customer-information customer=customerInstance}}
-{{/each}}
+<div class="ip-customer-table">
+  <h2 id="title">Customers Attending 2016</h2>
+    <table>
+      <thead class="ip-customer-table-heading">
+        <tr>
+          <th>Customer</th>
+          <th>Distance Away</th>
+          <th>Distance Away</th>
+          <th>Distance Away</th>
+          <th>Distance Away</th>
+        </tr>
+      </thead>
+      <tbody class="ip-customer-table-body">
+          {{#each model as |customerInstance|}}
+            {{customer-information customer=customerInstance}}
+          {{/each}}
+      </tbody>
+    </table>
+
+</div>
+
 
 {{#link-to "about"}}About{{/link-to}}
-<!-- {{#link-to "customers"}}Customers{{/link-to}} -->
