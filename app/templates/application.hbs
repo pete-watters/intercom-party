@@ -1,3 +1,23 @@
 <div class="ip-main-body">
+  <div class="ip-event-info">
+    <h2 id="title">Welcome to the Intercom Party 2016 Ember App</h2>
+    <section>
+      <aside>Home</aside>
+      <article>{{#link-to "index"}}Home{{/link-to}}</article>
+    </section>
+    <section>
+      <aside>What is it?</aside>
+      <article>{{#link-to "about"}}About{{/link-to}}</article>
+    </section>
+    <section>
+      <aside>All of our customers</aside>
+      <article>{{#link-to "all-customers"}}All Customers{{/link-to}}</article>
+    </section>
+    <section>
+      <aside>Our local customers</aside>
+      <article>{{#link-to "local-customers"}}Local Customers{{/link-to}}</article>
+    </section>
+  </div>
+
   {{outlet}}
 </div>

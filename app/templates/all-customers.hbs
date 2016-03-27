@@ -1,0 +1,20 @@
+<div class="ip-customer-table">
+  <h2 id="title">All our Customers 2016</h2>
+    <table>
+      <thead class="ip-customer-table-heading">
+        <tr>
+          <th>ID</th>
+          <th>Customer ID</th>
+          <th>Customer</th>
+          <th>Longitude</th>
+          <th>Latitude</th>
+          <th>Distance Away</th>
+        </tr>
+      </thead>
+      <tbody class="ip-customer-table-body">
+          {{#each model as |customerInstance|}}
+            {{customer-information customer=customerInstance}}
+          {{/each}}
+      </tbody>
+    </table>
+</div>
